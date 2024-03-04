@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <title>document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>LA MIGLIOR PAGINA PER CERCARE LAVORO</h1>
+        <form name="jobsFinderForm">
+
+            <div class=Grouptitle>
+                <label for="JobTitle">POSIZIONE LAVORATIVA</label>
+                <input type="text" class="form-control" id="jobstitle" placeholder="inserisce tipo di lavoro" name="jobstitle">
+            </div>
+
+            <div class="Grouplocation">
+                <label for="location">LOCATION</label>
+                <input type="text" class="form-control" id="location" placeholder="Inserisce location" name="location">
+            </div>
+
+            <div class="button-ricerca">
+                <input type="button" id="btn-cerca" value="cerca" onclick="ricercaLavoro(document.forms['jobsFinderForm'].jobstitle.value, document.forms['jobsFinderForm'].location.value)">
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="risultati">
+
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</body>
+</html>
